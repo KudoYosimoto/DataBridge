@@ -8,8 +8,8 @@
     "databridge": "./src/index.js"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  "start": "node src/index.js",
+  "test": "node --test"
   },
   "keywords": [
     "data",
