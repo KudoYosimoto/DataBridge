@@ -135,15 +135,14 @@ test('throws error for empty XML file', async () => {
     });
 });
 
-// 7. Отсутствует корневой элемент с записями.
-test('throws error when XML root has no records', async () => {
+// 7. Пустой корневой элемент без записей.
+test('returns an empty array when XML root has no records', async () => {
     const xml = '<users></users>';
 
     await withTestFile(xml, async (filePath) => {
-        await assert.rejects(
-            readXML(filePath),
-            /record elements/,
-        );
+        const records = await readXML(filePath);
+
+        assert.deepEqual(records, []);
     });
 });
 

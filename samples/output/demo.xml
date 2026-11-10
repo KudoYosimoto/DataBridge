@@ -1,0 +1,37 @@
+<records>
+  <record>
+    <id>1</id>
+    <name>Ivan</name>
+    <email>ivan@mail.ru</email>
+    <age>25</age>
+    <birth_date>1999-01-15</birth_date>
+  </record>
+  <record>
+    <id>2</id>
+    <name>Maria</name>
+    <email>maria@mail.ru</email>
+    <age>30</age>
+    <birth_date>1994-05-20</birth_date>
+  </record>
+  <record>
+    <id>3</id>
+    <name>Peter</name>
+    <email>peter@mail.ru</email>
+    <age>22</age>
+    <birth_date>2002-07-01</birth_date>
+  </record>
+  <record>
+    <id>4</id>
+    <name>Anna</name>
+    <email>anna@mail.ru</email>
+    <age>28</age>
+    <birth_date>1998-11-11</birth_date>
+  </record>
+  <record>
+    <id>5</id>
+    <name>Olga</name>
+    <email>olga@mail.ru</email>
+    <age>35</age>
+    <birth_date>1989-03-09</birth_date>
+  </record>
+</records>

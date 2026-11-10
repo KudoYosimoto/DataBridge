@@ -8,8 +8,8 @@
     "databridge": "./src/index.js"
   },
   "scripts": {
-  "start": "node src/index.js",
-  "test": "node --test"
+    "start": "node src/index.js",
+    "test": "node --test"
   },
   "keywords": [
     "data",
@@ -23,12 +23,12 @@
     "commander": "^15.0.0",
     "csv-parse": "^7.0.3",
     "csv-stringify": "^6.9.0",
-    "date-fns": "^4.4.0",
     "fast-xml-parser": "^5.12.0",
     "js-yaml": "^5.5.0",
     "xlsx": "^0.18.5"
   },
-  "devDependencies": {
-    "jest": "^30.5.2"
+  "devDependencies": {},
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

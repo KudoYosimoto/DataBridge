@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "product": {
+      "type": "string",
+      "required": true,
+      "min_length": 2
+    },
+    "price": {
+      "type": "float",
+      "required": true,
+      "min": 0
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "active": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "mapping": {
+    "product": "productName"
+  },
+  "transformations": {
+    "productName": {
+      "type": "trim"
+    }
+  }
+}

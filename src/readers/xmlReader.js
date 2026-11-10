@@ -1,4 +1,3 @@
-
 import { readFile } from 'node:fs/promises';
 import { XMLParser, XMLValidator } from 'fast-xml-parser';
 
@@ -37,6 +36,10 @@ export async function readXML(filePath) {
     }
 
     const rootContent = parsedData[rootNames[0]];
+
+    if (rootContent === '') {
+        return [];
+    }
 
     if (
         typeof rootContent !== 'object'

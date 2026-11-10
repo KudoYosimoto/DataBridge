@@ -1,0 +1,11 @@
+record,field,value,message,recordData
+2,email,maria.mail.ru,Value does not match the required pattern,"{""id"":""2"",""name"":""Maria"",""email"":""maria.mail.ru"",""age"":""30"",""birth_date"":""1994-05-20""}"
+3,age,200,Value must be less than or equal to 100,"{""id"":""3"",""name"":""Peter"",""email"":""peter@mail.ru"",""age"":""200"",""birth_date"":""2000-03-10""}"
+4,name,,Value is required,"{""id"":""4"",""name"":"""",""email"":""empty@mail.ru"",""age"":""22"",""birth_date"":""2002-07-01""}"
+5,age,abc,Expected an integer,"{""id"":""5"",""name"":""Anna"",""email"":""anna@mail.ru"",""age"":""abc"",""birth_date"":""2001-11-11""}"
+5,age,abc,Cannot compare a non-numeric value,"{""id"":""5"",""name"":""Anna"",""email"":""anna@mail.ru"",""age"":""abc"",""birth_date"":""2001-11-11""}"
+7,age,12,Value must be greater than or equal to 16,"{""id"":""7"",""name"":""TooYoung"",""email"":""young@mail.ru"",""age"":""12"",""birth_date"":""2012-01-01""}"
+8,age,101,Value must be less than or equal to 100,"{""id"":""8"",""name"":""TooOld"",""email"":""old@mail.ru"",""age"":""101"",""birth_date"":""1920-01-01""}"
+9,birth_date,2023-02-30,Invalid date,"{""id"":""9"",""name"":""BadDate"",""email"":""date@mail.ru"",""age"":""24"",""birth_date"":""2023-02-30""}"
+10,email,,Value is required,"{""id"":""10"",""name"":""MissingEmail"",""email"":"""",""age"":""31"",""birth_date"":""1993-09-09""}"
+11,email,verylongemailaddresswithoutat.com,Value does not match the required pattern,"{""id"":""11"",""name"":""LongName"",""email"":""verylongemailaddresswithoutat.com"",""age"":""29"",""birth_date"":""1995-12-12""}"

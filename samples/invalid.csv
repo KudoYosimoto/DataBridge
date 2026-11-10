@@ -1,0 +1,12 @@
+id,name,email,age,birth_date
+1,Ivan,ivan@mail.ru,25,1999-01-15
+2,Maria,maria.mail.ru,30,1994-05-20
+3,Peter,peter@mail.ru,200,2000-03-10
+4,,empty@mail.ru,22,2002-07-01
+5,Anna,anna@mail.ru,abc,2001-11-11
+6,Duplicate,ivan@mail.ru,27,1997-02-02
+7,TooYoung,young@mail.ru,12,2012-01-01
+8,TooOld,old@mail.ru,101,1920-01-01
+9,BadDate,date@mail.ru,24,2023-02-30
+10,MissingEmail,,31,1993-09-09
+11,LongName,verylongemailaddresswithoutat.com,29,1995-12-12

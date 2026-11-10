@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Ivan",
+    "email": "ivan@mail.ru",
+    "age": 25,
+    "birth_date": "1999-01-15"
+  },
+  {
+    "id": 2,
+    "name": "Maria",
+    "email": "maria@mail.ru",
+    "age": 30,
+    "birth_date": "1994-05-20"
+  },
+  {
+    "id": 3,
+    "name": "Peter",
+    "email": "peter@mail.ru",
+    "age": 22,
+    "birth_date": "2002-07-01"
+  },
+  {
+    "id": 4,
+    "name": "Anna",
+    "email": "anna@mail.ru",
+    "age": 28,
+    "birth_date": "1998-11-11"
+  },
+  {
+    "id": 5,
+    "name": "Olga",
+    "email": "olga@mail.ru",
+    "age": 35,
+    "birth_date": "1989-03-09"
+  }
+]

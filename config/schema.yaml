@@ -1,0 +1,28 @@
+fields:
+  name:
+    type: string
+    required: true
+    min_length: 2
+    max_length: 50
+
+  email:
+    type: string
+    required: true
+    pattern: '^[^\s@]+@[^\s@]+\.[^\s@]+$'
+    unique: true
+
+  age:
+    type: integer
+    required: true
+    min: 18
+    max: 100
+
+mapping:
+  name: fullName
+
+transformations:
+  fullName:
+    type: trim
+
+  email:
+    type: lowercase

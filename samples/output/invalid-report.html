@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBridge — Validation Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #222;
+            background: #f5f6f8;
+        }
+
+        h1, h2 {
+            color: #243247;
+        }
+
+        .statistics {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 24px 0;
+        }
+
+        .stat {
+            flex: 1;
+            min-width: 150px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .stat strong {
+            display: block;
+            margin-top: 8px;
+            font-size: 28px;
+        }
+
+        .valid {
+            color: #198754;
+        }
+
+        .invalid {
+            color: #dc3545;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+            overflow-wrap: anywhere;
+        }
+
+        th {
+            background: #243247;
+            color: white;
+        }
+
+        .empty {
+            text-align: center;
+            color: #198754;
+        }
+    </style>
+</head>
+<body>
+    <h1>DataBridge — Validation Report</h1>
+
+    <section class="statistics">
+        <div class="stat">
+            Total records
+            <strong>11</strong>
+        </div>
+        <div class="stat">
+            Valid records
+            <strong class="valid">2</strong>
+        </div>
+        <div class="stat">
+            Invalid records
+            <strong class="invalid">9</strong>
+        </div>
+    </section>
+
+    <h2>Validation errors</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Record</th>
+                <th>Field</th>
+                <th>Value</th>
+                <th>Error</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>2</td>
+                <td>email</td>
+                <td>maria.mail.ru</td>
+                <td>Value does not match the required pattern</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>age</td>
+                <td>200</td>
+                <td>Value must be less than or equal to 100</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>name</td>
+                <td></td>
+                <td>Value is required</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>age</td>
+                <td>abc</td>
+                <td>Expected an integer</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>age</td>
+                <td>abc</td>
+                <td>Cannot compare a non-numeric value</td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td>age</td>
+                <td>12</td>
+                <td>Value must be greater than or equal to 16</td>
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                <td>age</td>
+                <td>101</td>
+                <td>Value must be less than or equal to 100</td>
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                <td>birth_date</td>
+                <td>2023-02-30</td>
+                <td>Invalid date</td>
+            </tr>
+        
+            <tr>
+                <td>10</td>
+                <td>email</td>
+                <td></td>
+                <td>Value is required</td>
+            </tr>
+        
+            <tr>
+                <td>11</td>
+                <td>email</td>
+                <td>verylongemailaddresswithoutat.com</td>
+                <td>Value does not match the required pattern</td>
+            </tr>
+        
+        </tbody>
+    </table>
+</body>
+</html>
